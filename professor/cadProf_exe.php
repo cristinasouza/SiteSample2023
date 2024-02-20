@@ -85,10 +85,10 @@
 
 				// Faz Update na Base de Dados
 				if ($_FILES['Imagem']['size'] == 0) { // Não recebeu uma imagem binária
-					$sql = "UPDATE TB_Usuario SET Nome = '$nome', Celular = '$celular', DataNasc = '$dtNasc', Login = '$login' , Senha = '$md5Senha' WHERE ID_Usuario = $id";
+					$sql = "UPDATE TB_Usuario SET Nome = '$nome', Celular = '$celular', ID_Genero = '$genero', DataNasc = '$dtNasc', Login = '$login' , Senha = '$md5Senha' WHERE ID_Usuario = $id";
 				} else {
 					$imagem = addslashes(file_get_contents($_FILES['Imagem']['tmp_name'])); // Prepara para salvar em BD
-					$sql = "UPDATE TB_Usuario SET Nome = '$nome', Celular = '$celular', DataNasc = '$dtNasc', Login = '$login' , Senha = '$md5Senha', Foto = '$imagem' WHERE ID_Usuario = $id";
+					$sql = "UPDATE TB_Usuario SET Nome = '$nome', Celular = '$celular', ID_Genero = '$genero',DataNasc = '$dtNasc', Login = '$login' , Senha = '$md5Senha', Foto = '$imagem' WHERE ID_Usuario = $id";
 				}
 
 				echo "<div class='w3-responsive w3-card-4'>";

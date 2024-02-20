@@ -122,22 +122,7 @@
 							
 							</td>
 							<td>
-							
-							<p>
-							<label class="w3-text-IE"><b>NOVA Senha</b>*</label>
-							<input class="w3-input w3-border w3-sand" name="Senha" id="Senha" type="password" onchange="validarSenha()"
-									pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,8}"
-									title="Deve conter ao menos um número, uma letra maiúscula, uma letra minúscula, um caracter especial, e ter de 6 a 8 caracteres" 
-									required></p>
-							<p>
-							<label class="w3-text-IE"><b>Confirma NOVA Senha</b>*</label>
-							<input class="w3-input w3-border w3-sand" name="Senha2" id="Senha2" type="password" onkeyup="validarSenha()"
-									pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,8}"
-									title="Deve conter ao menos um número, uma letra maiúscula, uma letra minúscula, um caracter especial, e ter de 6 a 8 caracteres" 
-									required> </p> 
-							<p>
-							<input type="checkbox" class="w3-btn w3-theme"  onclick="mostrarOcultarSenha()"> Mostrar senha
-							</p>						
+												
 							<p style="text-align:center"><label class="w3-text-IE" ><b>Minha Imagem para Identificação: </b></label></p>
 							<?php
 							if ($foto) {?>
@@ -163,7 +148,7 @@
 							<td colspan="2" style="text-align:center">
 							<p>
 							<input type="submit" value="Alterar" class="w3-btn w3-red" >
-							<input type="button" value="Cancelar" class="w3-btn w3-theme" onclick="window.location.href='profListar.php'"></p>
+							<input type="button" value="Cancelar" class="w3-btn w3-theme" onclick="window.location.href='professor.php'"></p>
 						</tr>
 						</table>
 						<br>
